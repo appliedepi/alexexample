@@ -1,0 +1,19 @@
+Package: alexexample
+Title: Basic example used for testing credentialling in shiny apps 
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Alexander",
+             family = "Spina",
+             email = "aspina@appliedepi.org", 
+             comment = c(ORCID = "0000-0001-8425-1867"),
+             role = c("aut", "cre"))
+Description: This is a simple push to database in order to test wether we can use environment variables to store user credentials. Environment variables are defined in the shinyproxy yml file and thereby protected on our server. 
+License: GPL (>= 3)
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Imports: 
+  shiny, 
+  DBI, 
+  RMariaDB,
+  dplyr
