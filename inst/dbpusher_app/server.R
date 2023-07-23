@@ -22,7 +22,7 @@ function(input, output) {
 
     ## run function to push data to sql (defaults defined in function)
     ## only need to define what table to push to
-    pushdat_function(x = my_shit,
+    alexexample::pushdat_function(x = my_shit,
                      table = "alex_test")
 
     ## return message in the ui to say how many rows pushed
