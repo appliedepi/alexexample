@@ -4,12 +4,18 @@
 \alias{launchapp}
 \title{A basic function to run a shiny app from a package}
 \usage{
-launchapp(app, pkg)
+launchapp(app, pkg, launch.browser = 0, port = 3838, host = "0.0.0.0")
 }
 \arguments{
 \item{app}{name of the app you want to run}
 
 \item{pkg}{name of the package that app is in}
+
+\item{launch.browser}{shiny::runApp argument wether to launch browser (defualt = 0)}
+
+\item{port}{shiny::runApp argument to expose port (default 3838)}
+
+\item{host}{shiny::runApp argument to define which host}
 }
 \description{
 A basic function to run a shiny app from a package
