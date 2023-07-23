@@ -33,10 +33,17 @@ function(input, output) {
 
         user = Sys.getenv("db_user")
 
+        if (user == "") {
+          output$message_output <- renderText({
+            paste0("cant find")
+          })
+
+        } else {
+          output$message_output <- renderText({
+            paste0(user)
+          })
+        }
 
 
-        output$message_output <- renderText({
-          paste0(user)
-    })
   })
 }
